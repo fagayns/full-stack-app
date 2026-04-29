@@ -6,4 +6,4 @@ COPY . .
 RUN npm install
 RUN npm run build
 
-CMD ["npm", "run", "preview", "--", "--host"]
+CMD ["npx", "serve", "-s", "dist", "-l", "8080"]
